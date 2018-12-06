@@ -6,30 +6,26 @@ namespace FizzBuzz
     {
         private static void Main(string[] args)
         {
-            int number = 1;
-
-            while (number <= 100)
+            for (int i = 1; i <= 100; i++)
             {
-                if (number % 3 == 0)
+                if (i % 3 == 0)
                 {
                     Console.Write("Fizz");
 
-                    if (number % 5 != 0)
+                    if (i % 5 != 0)
                     {
                         Console.WriteLine();
                     }
                 }
 
-                if (number % 5 == 0)
+                if (i % 5 == 0)
                 {
                     Console.WriteLine("Buzz");
                 }
-                else if (number % 3 != 0)
+                else if (i % 3 != 0)
                 {
-                    Console.WriteLine(number);
+                    Console.WriteLine(i);
                 }
-
-                number++;
             }
 
             Console.ReadKey();
